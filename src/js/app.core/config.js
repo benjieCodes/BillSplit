@@ -5,16 +5,16 @@ function config ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('root', {
       abstract: true,
-      templateUrl: 'templates/layout.tpl.html'
+      templateUrl: './templates/layout.tpl.html'
     })
     .state('root.login', {
       url:'/login',
-      templateUrl: 'templates/login.tpl.html',
+      templateUrl: './templates/login.tpl.html',
       controller: 'LoginController as vm'
     })
     .state('root.register', {
       url:'/register',
-      templateUrl: 'templates/register.tpl.html',
+      templateUrl: './templates/register.tpl.html',
       controller: 'RegisterController as vm'
     })
   ;
