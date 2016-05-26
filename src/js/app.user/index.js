@@ -7,4 +7,7 @@ import { UserService } from './services/user.service';
 
 angular
   .module('app.user', [])
+  .controller('LoginController', LoginController)
+  .controller('RegisterController', RegisterController)
+  .service('UserService', UserService)
 ;
