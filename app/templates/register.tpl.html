@@ -1,24 +1,24 @@
 <h2>Sign Up</h2>
-<form>
+<form ng-submit="vm.addUser(user)">
   <div class="form-group">
    <label for="exampleInputEmail1">Email address</label>
-   <input type="email" class="form-control" id="exampleInputEmail1">
+   <input type="email" class="form-control" id="exampleInputEmail1" ng-model="user.email">
  </div>
  <div class="form-group">
    <label for="exampleInputPassword1">Password</label>
-   <input type="password" class="form-control" id="exampleInputPassword1">
+   <input type="password" class="form-control" id="exampleInputPassword1" ng-model="user.password">
  </div>
  <div class="form-group">
    <label for="exampleInputAddress1">Address</label>
-   <input type="email" class="form-control" id="exampleInputEmail1">
+   <input type="email" class="form-control" id="exampleInputEmail1" ng-model="user.address">
  </div>
  <div class="form-group">
    <label for="exampleFirstName1">First Name</label>
-   <input type="email" class="form-control" id="exampleInputEmail1">
+   <input type="email" class="form-control" id="exampleInputEmail1" ng-model="user.first_name">
  </div>
  <div class="form-group">
    <label for="exampleLastName1">Last Name</label>
-   <input type="password" class="form-control" id="exampleInputPassword1">
+   <input type="password" class="form-control" id="exampleInputPassword1"ng-model="last_name">
  </div>
    <input class="btn btn-default" type="submit" value="Submit">
 </form>
