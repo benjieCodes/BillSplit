@@ -3,8 +3,8 @@ function BillService ($http, urlConstant) {
 
   this.add = add
 
-  function add (){
-    
+  function add (bills){
+    console.log(bills);
   };
 
 }
