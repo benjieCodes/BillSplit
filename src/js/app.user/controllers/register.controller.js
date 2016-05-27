@@ -5,6 +5,7 @@ function RegisterController (UserService) {
   vm.registerUser = registerUser
 
   function registerUser (user) {
+    console.log(user);
     UserService.register(user);
   }
 
