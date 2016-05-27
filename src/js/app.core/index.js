@@ -1,5 +1,6 @@
 import angular from 'angular';
 import 'angular-ui-router';
+import 'angular-cookies';
 
 import { urlConstant } from './url.constant';
 
