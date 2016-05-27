@@ -7,7 +7,7 @@ import { urlConstant } from './url.constant';
 import { config } from './config';
 
 angular
-  .module('app.core',['ui.router'])
+  .module('app.core',['ui.router', 'ngCookies'])
   .constant('urlConstant', urlConstant)
   .config(config)
 ;
