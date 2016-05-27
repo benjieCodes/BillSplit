@@ -8,18 +8,23 @@ function config ($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/layout.tpl.html'
     })
     .state('root.home', {
-      url:'/',
+      url: '/',
       templateUrl: 'templates/home.tpl.html'
     })
     .state('root.login', {
-      url:'/login',
+      url: '/login',
       templateUrl: 'templates/login.tpl.html',
       controller: 'LoginController as vm'
     })
     .state('root.register', {
-      url:'/register',
+      url: '/register',
       templateUrl: 'templates/register.tpl.html',
       controller: 'RegisterController as vm'
+    })
+    .state('root.roommates', {
+      url: '/roommate',
+      templateUrl: 'templates/roommate.tpl.html',
+      controller: 'RoommateController as vm'
     })
   ;
 }

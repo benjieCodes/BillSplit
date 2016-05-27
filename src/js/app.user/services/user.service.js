@@ -21,7 +21,7 @@ function UserService ($http, urlConstant, $cookies, $state) {
     let token = $cookies.get('token')
 
     if (token) {
-      console.log('Successfully logged in!!!');
+
     } else {
       if (stateName !== 'root.login' && stateName !== 'root.register')
       $state.go('root.login')
