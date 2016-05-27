@@ -7,7 +7,6 @@ function RoommateService ($http, urlConstant, $cookies) {
     let config = { headers: { 'X-AUTH-TOKEN': token } };
 
     $http.post(urlConstant.URL + '/roommates', roommate, config).then( (res) => {
-      
     })
   }
 
