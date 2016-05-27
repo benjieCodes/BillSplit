@@ -7,6 +7,6 @@ import { config } from './config';
 
 angular
   .module('app.core',['ui.router'])
-  .constant('URL', urlConstant)
+  .constant('urlConstant', urlConstant)
   .config(config)
 ;
