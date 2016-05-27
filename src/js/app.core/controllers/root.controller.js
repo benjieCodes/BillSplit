@@ -1,4 +1,4 @@
-function RootController (UserService) {
+function RootController (UserService, $http, urlConstant, $cookies) {
 
   let vm = this;
   vm.logout = logout;
@@ -7,8 +7,17 @@ function RootController (UserService) {
     UserService.logOut();
   }
 
+  let token = $cookies.get('token');
+  let config = { headers: { 'X-AUTH-TOKEN': token } };
+
+    $http.get(urlConstant.URL + '/bills', config).then( (res) => {
+
+    });
+
+
 
 }
 
-RootController.$inject = ['UserService'];
+
+RootController.$inject = ['UserService', '$http', 'urlConstant', '$cookies'];
 export { RootController };
