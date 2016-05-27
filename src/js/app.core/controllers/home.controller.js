@@ -1,9 +1,7 @@
 function HomeController (UserService, $http, urlConstant, $cookies) {
 
   let vm = this;
-
-
-
+  
   let token = $cookies.get('token');
   let config = { headers: { 'X-AUTH-TOKEN': token } };
 

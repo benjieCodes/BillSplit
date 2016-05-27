@@ -1,6 +1,18 @@
-<h2>Pay Up Sucka!</h2>
+<div class="owner">
+  <h2>Pay Up Sucka!</h2>
+  <h4>Owner's Name:</h4>
+  <p>{{vm.ownerFirstName}} {{vm.ownerLastName}}</p>
+  <h4>Address of Home:</h4>
+  <p>{{vm.ownerAddress}}</p>
+  </ul>
+</div>
 
+<h3>Roommates List</h3>
 <div class="roommates" ng-repeat="roommate in vm.roommates">
+  <ul>
+    <li>{{roommate.first_name}} {{roommate.last_name}}</li>
+  </ul>
+
 </div>
 
 <div class="bills" ng-repeat="bill in vm.bills">
