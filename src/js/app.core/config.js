@@ -5,7 +5,8 @@ function config ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('root', {
       abstract: true,
-      templateUrl: 'templates/layout.tpl.html'
+      templateUrl: 'templates/layout.tpl.html',
+      controller: 'RootController as vm'
     })
     .state('root.home', {
       url: '/',

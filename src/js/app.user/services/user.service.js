@@ -3,6 +3,7 @@ function UserService ($http, urlConstant, $cookies, $state) {
   this.register = register;
   this.login = login;
   this.authenticate = authenticate;
+  this.logOut = logOut;
 
   function register (user) {
     $http.post(urlConstant.URL + '/users/new', user).then( (res) => {
@@ -25,8 +26,12 @@ function UserService ($http, urlConstant, $cookies, $state) {
     } else {
       if (stateName !== 'root.login' && stateName !== 'root.register')
       $state.go('root.login')
-    }
+    };
+  }
 
+  function logOut () {
+    $cookies.remove('token')
+    $cookies.remove('name')
   }
 }
 
