@@ -10,7 +10,8 @@ function config ($stateProvider, $urlRouterProvider) {
     })
     .state('root.home', {
       url: '/',
-      templateUrl: 'templates/home.tpl.html'
+      templateUrl: 'templates/home.tpl.html',
+      controller: 'HomeController as vm'
     })
     .state('root.login', {
       url: '/login',
