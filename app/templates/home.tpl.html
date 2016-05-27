@@ -1,7 +1,13 @@
-<h2>WELCOME!</h2>
+<h2>Pay Up Sucka!</h2>
 
 <div class="roommates" ng-repeat="roommate in vm.roommates">
 </div>
 
 <div class="bills" ng-repeat="bill in vm.bills">
+  <strong>{{ bill.company_name }}</strong>
+  <br>
+  {{ bill.description }} - ${{ bill.amount }}
+  <br>
+  {{ bill.due_date }}
+  <hr>
 </div>
