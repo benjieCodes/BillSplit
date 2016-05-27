@@ -5,10 +5,10 @@ function AddBillsController (BillService) {
 
   vm.addBill = addBill
 
-  function addBill (user) {
-    BillService.add(user);
+  function addBill (bill) {
+    BillService.add(bill);
   }
-  console.log(addBill);
+  // console.log(addBill);
 }
 
 AddBillsController.$inject = ['BillService'];
