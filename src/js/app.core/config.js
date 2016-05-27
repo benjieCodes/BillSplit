@@ -21,6 +21,11 @@ function config ($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/register.tpl.html',
       controller: 'RegisterController as vm'
     })
+    .state('root.addBill', {
+      url:'/addBill',
+      templateUrl: 'templates/bills.tpl.html',
+      controller: 'AddBillsController as vm'
+    })
   ;
 }
 
