@@ -26,6 +26,11 @@ function config ($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/roommate.tpl.html',
       controller: 'RoommateController as vm'
     })
+    .state('root.addBill', {
+      url:'/addBill',
+      templateUrl: 'templates/bills.tpl.html',
+      controller: 'AddBillsController as vm'
+    })
   ;
 }
 
