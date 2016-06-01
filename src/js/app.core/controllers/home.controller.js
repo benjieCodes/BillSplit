@@ -1,7 +1,7 @@
 function HomeController (UserService, $http, urlConstant, $cookies) {
 
   let vm = this;
-  
+
   let token = $cookies.get('token');
   let config = { headers: { 'X-AUTH-TOKEN': token } };
 
@@ -11,9 +11,8 @@ function HomeController (UserService, $http, urlConstant, $cookies) {
     vm.ownerFirstName = res.data.first_name;
     vm.ownerLastName = res.data.last_name;
     vm.roommates = res.data.roommates;
-
-    console.log(res);
   });
+
 
 
 }

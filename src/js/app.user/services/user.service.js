@@ -15,6 +15,7 @@ function UserService ($http, urlConstant, $cookies, $state) {
     $http.post(urlConstant.URL + '/login', user).then( (res) => {
       $cookies.put('token', res.data.auth_token);
       $cookies.put('name', res.data.first_name);
+      $state.go('root.home')
     });
   }
 

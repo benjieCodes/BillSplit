@@ -1,4 +1,6 @@
 <div class="owner">
+  <h1>Welcome to ROOMRATE</h1>
+  <hr>
   <h2>Pay Up Sucka!</h2>
   <h4>Owner's Name:</h4>
   <p>{{vm.ownerFirstName}} {{vm.ownerLastName}}</p>
@@ -14,7 +16,9 @@
   </ul>
 
 </div>
+<hr>
 
+<h3>Bills</h3>
 <div class="bills" ng-repeat="bill in vm.bills">
   <strong>{{ bill.company_name }}</strong>
   <br>
@@ -23,3 +27,6 @@
   {{ bill.due_date }}
   <hr>
 </div>
+
+
+  <h2>{{vm.sum}}</h2>
